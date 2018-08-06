@@ -1,0 +1,35 @@
+.heading-text {
+	margin: 2em 1em;
+	text-align: center;
+
+	span {
+		font-size: 1.1em;
+		font-weight: 400;
+	}
+}
+
+#back-to-top {
+  // display: none;
+  padding: .23em;
+  width: 1.5em;
+  height: 1.5em;
+  position: fixed;
+  bottom: 20px;
+  border-radius: 50%;
+  right: 30px;
+  z-index: 99;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  color: $main-color;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 5px -0.5px rgba(0,0,0,0.8);
+}
+
+@media only screen and (min-width : 60em) {
+	.heading-text {
+		font-size: 1.5em;
+		margin: 2em 3em;
+	}
+}

@@ -1,0 +1,286 @@
+ .swiper-container {
+  width: 100%;
+  height: 10em;
+}
+
+.swiper-container-testimonials {
+  height: auto;
+  margin-bottom: 1em;
+
+  .swiper-slide {
+    padding: 1em 0;
+    height: 10em;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide-custom {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .slide-content {
+    z-index: 2;
+    margin:0 1.5em;
+
+    h1 {
+      font-size: 1.75em;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,.6);
+      font-weight: 700;
+
+      span:first-child{
+        text-transform: uppercase;
+        font-size: .7em;
+      }
+
+      span:nth-child(2) {
+        width: 100%;
+        display: block;
+        font-weight: 400;
+        font-size: .45em;
+      }
+    }
+  }
+}
+
+.swiper-slide-custom::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slide1 {
+  background-image: url('assets/images/slider-image-1.jpg');
+}
+
+.slide2 {
+  background-image: url('assets/images/slider-image-2.jpg');
+}
+
+.slide3 {
+  background-image: url('assets/images/slider-image-3.jpg');
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color:#000;
+  opacity: 1;
+  background: rgba(0,0,0,0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color:#fff;
+  background: lighten($main-color, 20%);
+}
+
+.hero-slider {
+  .swiper-pagination-bullet {
+    color: #fff;
+    background: rgba(255,255,255,0.5);
+  }
+  .swiper-pagination-bullet-active {
+    color:#fff;
+    background: lighten($main-color, 20%);
+  }
+}
+
+.testimonials {
+  margin: 1em 0;
+
+  .swiper-container {
+   height: 18em;
+
+   .swiper-slide {
+    display: flex;
+    justify-content: center;
+    }
+  }
+}
+
+.testimonial-1-content {
+  margin: 0 1em;
+  align-self: center;
+
+
+  h1 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  .testimonial-author {
+    font-size: .7em;
+    font-weight: 300;
+    color: $main-color;
+    position: absolute;
+    bottom: -1.3em;
+    right: 4em;
+  }
+}
+
+/*small tablet */
+
+@media only screen and (min-width : 40em) {
+
+   .swiper-container {
+    width: 100%;
+    height: 15em;
+  }
+
+  .swiper-slide-custom {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .slide-content {
+
+      h1 {
+        font-size: 3em;
+      }
+    }
+  }
+
+  .testimonials {
+    margin: 2em 0;
+
+    .swiper-container {
+     height: 13em;
+
+     .swiper-slide {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .testimonial-1-content {
+
+
+    .testimonial-author {
+      bottom: 1em;
+      right: 4em;
+    }
+  }
+
+}
+
+
+
+/*tablet */
+
+@media only screen and (min-width : 60em) {
+
+  .testimonials {
+    margin: 0em 4em;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 17em;
+  }
+
+  .swiper-slide-custom {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .slide-content {
+
+      h1 {
+        font-size: 3.4em;
+      }
+    }
+  }
+
+  .testimonials {
+
+    .swiper-container {
+     height: 12em;
+    }
+  }
+
+  .testimonial-1-content {
+
+
+    .testimonial-author {
+      bottom: 2em;
+      right: 4em;
+    }
+  }
+
+}
+
+
+
+/*destop*/
+
+@media only screen and (min-width : 80em) {
+
+  .swiper-container {
+    width: 100%;
+    height: 20em;
+  }
+
+  .swiper-slide-custom {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .slide-content {
+
+      h1 {
+        font-size: 3.9em;
+      }
+    }
+  }
+
+  .testimonials {
+    margin: 1em 4em;
+
+    .swiper-container {
+     height: 13em;
+    }
+
+  }
+
+  .testimonial-1-content {
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+
+    .testimonial-author {
+      bottom: .5em;
+      right: 4em;
+    }
+  }
+}
+

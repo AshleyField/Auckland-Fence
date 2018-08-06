@@ -1,0 +1,107 @@
+/* ==|======================
+   Layout/Three Column with Icons
+   ========================= */
+
+ .l_column_container {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ 	margin: 0 2em;
+
+ 	&_item {
+		flex: 1 0 90%;
+		margin: 1em;
+		box-sizing: border-box;
+ 		margin-top: 3.5em;
+
+		.icon {
+ 			position: relative;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+
+			img {
+				position: absolute;
+				top: -1.5em;
+				width: 1.5em;
+				display: block;
+				z-index: 5;
+			}
+		}
+
+		&_inner {
+			margin: 2em 1em;
+			margin-top: 3em;
+			text-align: center;
+
+			h1 {
+				font-size: 1em;
+				text-align: center;
+				text-transform: uppercase;
+			}
+		}
+
+ 	}
+ }
+
+ /*for small tablet - inclusive*/
+
+ @media only screen and (min-width : 40em) {
+
+ 	.l_column_container_item {
+ 		flex: 0 0 70%;
+ 	}
+}
+
+
+
+/*for tablet - inclusive*/
+
+@media only screen and (min-width : 60em) {
+	.services {
+		margin: 0 3em;
+	}
+
+	.l_column_container_item {
+ 		flex: 0 0 30%;
+ 	}
+}
+
+
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : 80em) {
+}
+
+/* ==|======================
+   Module/Column Item
+   ========================= */
+
+   .column_item {
+
+   	background-color: rgba($main-color, .15);
+   	border-radius: 3px;
+
+   	.icon {
+   		width: 100%;
+
+	   	img {
+	   		font-size: 2em;
+	   		padding: .5em;
+		   	background-color: #fff;
+		   	border: 2px $main-color solid;
+		   	border-radius: 50%;
+		   	color: #fff;
+		   	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	   	}
+	}
+
+	hr {
+		border: 0;
+	    height: 1px;
+	    width: 10em;
+	    border-top: 1px $main-color solid;
+	}
+
+   }

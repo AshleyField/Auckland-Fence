@@ -1,0 +1,29 @@
+.button-small {
+	background-color: $main-color;
+	height: 1em;
+	width: 4em;
+	margin: .5em auto;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 0 5px -1px rgba(0,0,0,0.8);
+	margin-bottom: 1.5em;
+
+	a {
+		font-size: .5em;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		align-self: center;
+	}
+}
+
+@media only screen and (min-width : 40em) {
+	.button-small {
+		font-size: .75em;
+	}
+}
