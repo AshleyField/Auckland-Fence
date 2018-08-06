@@ -73,13 +73,13 @@
 
 				<div class="l_column_container_item column_item">
 					<div class="icon">
-						<img src="<?php echo get_theme_file_uri('assets/images/Icons-04.png')?>" alt="Pool Fences">
+						<img src="<?php echo get_theme_file_uri('assets/images/Icons-01.png')?>" alt="Decks">
 					</div>
 
 					<div class="l_column_container_item_inner">
-						<h1>Pool Fencing</h1>
+						<h1>Decks</h1>
 						<hr>
-						<p>Round post walls, square posts walls, timber walls, Keystone walls</p>
+						<p>We offer a wide range of decking including; Pine Decking, Hardwood Decking, Composite Decking</p>
 					</div>
 
 				</div>
