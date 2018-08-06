@@ -2,7 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Auckland Fence | Home</title>
+
+
+	<?php if ( is_home() ) {
+
+	    $page_title = 'Home';
+	} else {
+
+	    $page_title = $wp_query->post->post_title;
+	} ?>
+
+	<title><?php echo $page_title ?> | Auckland Fence Company</title>
 
 	<meta name="description" content="Welcome to The Auckland Fence Company where fences are our speciality. We are based in Auckland and have been fencing for over 23 years.">
 
