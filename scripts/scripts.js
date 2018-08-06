@@ -18,9 +18,12 @@ var swiper = new Swiper('.swiper-container', {
 		dynamicBullets: true,
 	},
 	autoplay: {
-		delay: 3000,
+		delay: 5000,
 		disableOnInteraction: true,
 	},
+	fadeEffect: {
+    crossFade: true
+  },
 
 });
 
