@@ -44,11 +44,11 @@
 				<i class="fas fa-bars"></i>
 			</div>
 			<ul class="navigation">
-				<li><a href="/" class="active">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/gallery">Gallery</a></li>
-				<li><a href="/guarantee">Guarantee</a></li>
-				<li><a href="/testimonials">Testimonials</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="/" class="<?php if (is_home()) echo 'active'?>">Home</a></li>
+				<li><a href="/about" class="<?php if (is_page('About'))echo 'active'?>">About</a></li>
+				<li><a href="/gallery" class="<?php if (is_page('Gallery'))echo 'active'?>">Gallery</a></li>
+				<li><a href="/guarantee" class="<?php if (is_page('Guarantee'))echo 'active'?>">Guarantee</a></li>
+				<li><a href="/testimonials" class="<?php if (is_page('Testimonials'))echo 'active'?>">Testimonials</a></li>
+				<li><a href="/contact" class="<?php if (is_page('Contact'))echo 'active'?>">Contact</a></li>
 			</ul>
 		</nav>
