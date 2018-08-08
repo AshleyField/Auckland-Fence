@@ -422,6 +422,9 @@ footer {
   .no-banner {
     margin-top: 3em; } }
 
+.siteorigin-panels-stretch {
+  padding: 0 !important; }
+
 .sow-slider-image-wrapper h1 {
   text-transform: uppercase;
   font-weight: 700; }
