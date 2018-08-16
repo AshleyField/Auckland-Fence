@@ -1,3 +1,6 @@
+//-- Plugin Customisations --
+
+
 // Page Hero/Banner
 
 .sow-slider-image-wrapper {
@@ -11,11 +14,54 @@
 	}
 }
 
+
 //Contact Form
 
 @media only screen and (min-width : 37.5em) {
 
 	#wpforms-99-field_2 {
 		width: 60%;
+	}
+
+	// .wpforms-field-container {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	flex-wrap: wrap;
+	// 	align-content: center;
+	// }
+
+	.wpforms-field {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		label {
+			flex: 1 0 90%;
+			max-width: 60%;
+			margin-bottom: 1em;
+		}
+
+		.wpforms-field-row {
+			flex: 1 0 90%;
+			margin-top: 1em;
+		}
+	}
+
+	.wpforms-submit-container {
+		max-width: 60%;
+		margin: auto !important;
+	}
+
+	.contact-extra-base-container {
+		max-width: 60%;
+		margin: auto;
+	}
+
+	.contact-page {
+
+		h1 {
+			margin: auto;
+			max-width: 60%;
+		}
 	}
 }

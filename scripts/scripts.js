@@ -8,6 +8,8 @@ $(function(){
 		e.stopPropagation();
 		$('.navigation').slideToggle(300);
 	});
+
+	$('.testimonial-object').prepend('<i class="fas fa-quote-left"></i>');
 });
 
 var swiper = new Swiper('.swiper-container', {

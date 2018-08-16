@@ -9,7 +9,7 @@
 								<span>23 Years of Experience</span>
 								<span>Exceptional quality work and friendly service</span>
 
-								<div class="button-small"><a href="">Contact Us</a></div>
+								<div class="button-small"><a href="/contact">Contact Us</a></div>
 							</h1>
 						</div>
 					</div>
@@ -19,7 +19,7 @@
 								<span>We Get the job done</span>
 								<span>Every time, period.</span>
 
-								<div class="button-small"><a href="">Contact Us</a></div>
+								<div class="button-small"><a href="/contact"">Contact Us</a></div>
 							</h1>
 						</div>
 					</div>
@@ -29,7 +29,7 @@
 								<span>Quality workmanship</span>
 								<span>We strive for excellence</span>
 
-								<div class="button-small"><a href="">Contact Us</a></div>
+								<div class="button-small"><a href="/contact"">Contact Us</a></div>
 							</h1>
 						</div>
 					</div>

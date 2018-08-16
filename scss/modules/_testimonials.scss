@@ -1,0 +1,18 @@
+//-- Testimonials --
+
+.testimonial-object {
+
+	border-radius: 5px;
+	padding: 1em;
+	background-color: fade-out($main-color, .8);
+
+	.textwidget {
+
+		&:before {
+		}
+	}
+}
+
+.panel-grid-cell .widget:nth-child(even) .testimonial-object{
+	background-color: fade-out($main-color, .6);
+}

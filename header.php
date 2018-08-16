@@ -24,6 +24,10 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
+	<link rel="icon" type="image/png" href="<?php echo get_theme_file_uri('assets/images/fence-favicon-16.png') ?>" sizes="16x16">  
+	<link rel="icon" type="image/png" href="<?php echo get_theme_file_uri('assets/images/fence-favicon-32.png') ?>" sizes="32x32">  
+	<link rel="icon" type="image/png" href="<?php echo get_theme_file_uri('assets/images/fence-favicon-96.png') ?>" sizes="96x96">  
+
 	<?php wp_head(); ?>
 
 </head>
@@ -34,7 +38,7 @@
 	<div class="wrapper">
 		<nav>
 			<div class="logo">
-				<a href="">
+				<a href="/">
 					<span>The Auckland</span>
 					<span>Fence Company</span>
 				</a>
