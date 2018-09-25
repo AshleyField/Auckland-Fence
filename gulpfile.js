@@ -4,11 +4,18 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var minify = require('gulp-minifier');
 var replaceName = require('gulp-replace-name');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
   return gulp.src('./scss/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(''));
+    .pipe(gulp.dest(''))
+    .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
 });
 
 gulp.task('minifyJS', function() {
@@ -28,7 +35,8 @@ gulp.task('minifyJS', function() {
 gulp.task('replaceNameJS', function() {
   return gulp.src('./scripts/minified-scripts/scripts.js')
     .pipe(replaceName(/\.js/g, '.min.js'))
-    .pipe(gulp.dest('./minified'));
+    .pipe(gulp.dest('./minified'))
+    .pipe(sourcemaps.write());;
 });
 
  

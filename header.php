@@ -7,10 +7,12 @@
 	<?php if ( is_home() ) {
 
 	    $page_title = 'Home';
-	} else {
+	} else if ( is_404() ) {
+        $page_title = '404 Not Found';
+    } else {
 
 	    $page_title = $wp_query->post->post_title;
-	} ?>
+	}?>
 
 	<title><?php echo $page_title ?> | Auckland Fence Company</title>
 
@@ -34,7 +36,6 @@
 <body>
 
 	<button id="back-to-top" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
-
 	<div class="wrapper">
 		<nav>
 			<div class="logo">
